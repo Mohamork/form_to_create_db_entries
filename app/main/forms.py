@@ -2,6 +2,6 @@ from django.forms import ModelForm
 from .models import Series
 
 class SeriesForm(ModelForm) :
-    class meta :
+    class Meta :
         model = Series
-    fields = ['name']
+        fields = ['name']
