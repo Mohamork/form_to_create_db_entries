@@ -9,7 +9,7 @@ def get_input(request) :
         form = SeriesForm(request.POST)
         if form.is_valid() :
             form.save()
-            return HttpResponseRedirect('/result')
+            return HttpResponseRedirect('result')
     else:
         form = SeriesForm()    
     return render(request,'input.html',{'form':form})
